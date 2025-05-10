@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Cats Corner Cafe</title>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" /> <!-- Please add animation here, using jsdelivr is welcomed. -->
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Georgia', serif;
+            background-color: #fffaf0;
+            color: #2c2c2c;
+            opacity: 0;
+            animation: fadeInBody 1s ease-in forwards;
+        }
+
+        @keyframes fadeInBody {
+            to {
+                opacity: 1;
+            }
+        } 
+
+        header {
+            background-color: #8f877c;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 10;
+        }
+
+        header img {
+            height: 100px;
+        }
+
+        header h1 {
+            font-family: 'Brush Script MT', cursive;
+            font-size: 40px;
+            color: white;
+            margin: 0;
+            margin-left: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffcc99;
+        }
+
+        main {
+            padding-top: 140px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 60px 0;
+            gap: 40px;
+            padding: 0 20px;
+        }
+
+        .section:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .section img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .text {
+            flex: 1;
+        }
+
+        .text h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .text p {
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        .text span {
+            font-family: cursive;
+            font-size: 20px;
+            color: #8f4d4d;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #8f877c;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #a45d5d;
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <header data-aos="fade-down">
+        <img src="logobetter.png" alt="Logo" />
+        <h1>The Cats Corner Cafe</h1>
+        <nav>
+            <a href="menu.html">Menu</a>
+            <a href="https://www.youtube.com/@TheCatsCornerCafe" target="_blank">About Us</a>
+            <a href="#contact" onclick="alert('thecatscornercafe@gmail.com')">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section" data-aos="fade-up">
+            <img src="catcoffee1.png" alt="Latte with cat art" data-aos="zoom-in" />
+            <div class="text" data-aos="fade-left">
+                <span>Know.</span>
+                <h2>Introducing us</h2>
+                <p>
+                    Compared to the typical coffees found in most basic coffee shops, the Cats Corner Cafe is very
+                    different.
+                    Our store offers a wide selection of baked goods, drinks, and cat keychains that are ideal for any
+                    time of
+                    day. In addition to enjoying our merchandise, a visit to our cat cafe will allow you to bond with
+                    our
+                    devoted cats. We will make sure that our customers receive the right treatment as soon as they
+                    enter.
+                </p>
+                <button onclick="alert('Mrowllo too!🐾 Our paws are always open for a visit!')">Say Mrowllo</button>
+            </div>
+        </section>
+
+        <section class="section" data-aos="fade-up">
+            <img src="pastries.jpg" alt="Pastries and drinks" data-aos="zoom-in" />
+            <div class="text" data-aos="fade-right">
+                <span>Taste.</span>
+                <h2>Introducing our drinks and pastries</h2>
+                <p>
+                    Our café serves both hot and cold coffee, smoothies, and freshly made pastries like donuts and
+                    croissants.
+                    Our best-sellers include lattes and espresso. We use pure fruit and dairy in our smoothies to ensure
+                    rich
+                    nutrition. Customers love the relaxing, friendly ambiance we've built.
+                </p>
+                <a href="order.html" style="color:#8f4d4d;text-decoration: underline;">Order to us!</a>
+            </div>
+        </section>
+
+        <section class="section" data-aos="fade-up">
+            <img src="mission.jpg" alt="Cup of latte on wooden table" data-aos="zoom-in" />
+            <div class="text" data-aos="fade-left">
+                <span>Purpose.</span>
+                <h2>Our mission</h2>
+                <p>
+                    The Cats Corner Cafe serves those who love both coffee and cats. Our goal is to offer quality
+                    products at
+                    affordable prices and support stray cats by donating tips and excess money to animal shelters.
+                    Everyone—
+                    students and professionals alike—can enjoy the relaxing charm of our café while supporting a good
+                    cause. <!-- To future John please add script that adds animation, thank you -->
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer data-aos="fade-up">
+        <p>&copy; 2025 Cats Corner Cafe</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+
+</html>
